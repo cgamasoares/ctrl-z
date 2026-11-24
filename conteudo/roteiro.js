@@ -163,7 +163,7 @@ window.ROTEIRO = {
   recados: {
     statusAusente: "Equipe CTRL+Z – na Feira do Bixiga, voltamos já",
     statusOnline:  "Equipe CTRL+Z – de volta da feira",
-    inicial: "Oi! A gente saiu pra Feira do Bixiga e deixou o PC ligado de propósito. Começa pelo e-mail da pauta 😉",
+    inicial: "Oi! A gente saiu pra Feira do Bixiga e deixou o PC ligado de propósito. Comece pelo e-mail da pauta 😉",
     retorno: "Que bom que você voltou! Seguimos de onde você parou.",
     depoisDe: {
       1: "Viu a pauta? O rascunho tá anexado. Abre o rascunho.doc pra conhecer o Raul.",
