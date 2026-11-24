@@ -28,12 +28,12 @@ window.ROTEIRO = {
   /* ---------- Equipe (créditos) ----------
      instagram: só o usuário, como "@usuario". Vazio = aparece só o nome. */
   equipe: [
-    { nome: "Brenda Teixeira",   instagram: "" },
-    { nome: "Camila da Gama/@camis_dogama",    instagram: "@camis_dogama" },
-    { nome: "Igor Rios",         instagram: "" },
-    { nome: "Lorena de Oliveira", instagram: "" },
-    { nome: "Lilian Xavier",     instagram: "" },
-    { nome: "Marina Luna",       instagram: "" }
+    { nome: "Brenda Teixeira",   instagram: "@brendasteixeira_" },
+    { nome: "Camila da Gama",    instagram: "@camis_dogama" },
+    { nome: "Igor Rios",         instagram: "@igor.n.rios" },
+    { nome: "Lorena de Oliveira", instagram: "@yu.yulore" },
+    { nome: "Lilian Xavier",     instagram: "@im.lilianxavier" },
+    { nome: "Marina Luna",       instagram: "@maresdemarina" }
   ],
 
   /* ---------- As 9 paradas ----------
