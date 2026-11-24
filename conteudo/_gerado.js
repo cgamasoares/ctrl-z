@@ -33,10 +33,10 @@ window.ROTEIRO = {
   /* ---------- Equipe (créditos) ----------
      instagram: só o usuário, como "@usuario". Vazio = aparece só o nome. */
   equipe: [
-    { nome: "Brenda Teixeira",   instagram: "" },
-    { nome: "Camila da Gama",    instagram: "" },
-    { nome: "Igor Rios",         instagram: "" },
-    { nome: "Lorena de Oliveira", instagram: "" },
+    { nome: "Brenda Teixeira",   instagram: "@brendasteixeira_" },
+    { nome: "Camila da Gama",    instagram: "@camis_dogama" },
+    { nome: "Igor Rios",         instagram: "@igor.n.rios" },
+    { nome: "Lorena de Oliveira", instagram: "@yu.yulore" },
     { nome: "Lilian Xavier",     instagram: "" },
     { nome: "Marina Luna",       instagram: "" }
   ],
@@ -126,7 +126,7 @@ window.ROTEIRO = {
     { arquivo: "midias/fotos/arredores/entorno-13.jpg", grupo: "arredores", legenda: "Entorno da feira", credito: "Equipe CTRL+Z", descricao: "Barracas brancas da feira vistas da rua, atrás de um canteiro de flores" },
     { arquivo: "midias/fotos/arredores/entorno-14.jpg", grupo: "arredores", legenda: "Esquina no Bixiga", credito: "Equipe CTRL+Z", descricao: "Placas de rua em uma esquina, com um prédio de janelas em arco ao fundo" },
     { arquivo: "midias/fotos/arredores/entorno-15.jpg", grupo: "arredores", legenda: "Rua do bairro", credito: "Equipe CTRL+Z", descricao: "Rua do bairro com árvores e casarões" },
-    { arquivo: "midias/fotos/personagens/rascunho-02.jpg", legenda: "Movimento na feira", credito: "Equipe CTRL+Z", descricao: "Visitantes diante de uma barraca da feira, com a vendedora ao centro", parada: 2, paragrafo: 3, principal: true },
+    { arquivo: "midias/fotos/personagens/rascunho-02.jpg", legenda: "Movimento na feira", credito: "| Equipe CTRL+Z", descricao: "Visitantes diante de uma barraca da feira, com a vendedora ao centro", parada: 2, paragrafo: 3, principal: true },
     { arquivo: "midias/fotos/feira/okrute-05.jpg", legenda: "Lentes à venda", credito: "Equipe CTRL+Z", descricao: "Lentes de câmeras fotográficas organizadas sobre uma mesa branca, vistas de cima", parada: 3, paragrafo: 1 },
     { arquivo: "midias/fotos/feira/disco-16.jpg", legenda: "Disco de Gilberto Gil", credito: "Equipe CTRL+Z", descricao: "Mão segurando o disco de Gilberto Gil sobre uma caixa de discos", parada: 7, paragrafo: 2 },
     { arquivo: "midias/fotos/feira/navegador-18.jpg", legenda: "Discos e CDs", credito: "Equipe CTRL+Z", descricao: "Pilhas de discos de vinil e CDs em uma barraca", parada: 8, secao: "streaming" },
