@@ -98,7 +98,7 @@ git push -u origin main
 4. Quando ficar verde (cerca de 1 a 2 minutos), o endereço aparece em **Settings → Pages** e no resumo do fluxo:
    `https://SEU-USUARIO.github.io/do-clique-ao-vinil/`
 
-O fluxo roda `node atualizar-conteudo.js` e publica só o que o site usa (`index.html`, `404.html`, `assets/` e `conteudo/`). README, scripts e arquivos de configuração não vão para o ar.
+O fluxo tem dois jobs: **montar** (roda `node atualizar-conteudo.js` e prepara a pasta) e **publicar** (envia ao Pages). Ele publica só o que o site usa (`index.html`, `404.html`, `assets/` e `conteudo/`). README, scripts e arquivos de configuração não vão para o ar.
 
 ### Passo 3B (alternativa). Publicar direto da branch
 
@@ -148,6 +148,8 @@ Com o Passo 3B, o GitHub cria sozinho um arquivo `CNAME` na raiz. Com o 3A, não
 | Mensagem "Conteúdo não encontrado" | `_gerado.js` não foi gerado | Rode `node atualizar-conteudo.js` e envie o arquivo. |
 | Página 404 do GitHub | Pages ainda não ativado ou publicação em andamento | Confira **Settings → Pages** e a aba **Actions**. Aguarde 2 minutos. |
 | Fluxo em Actions falha em "Publicar" | Source não está em **GitHub Actions** | Ajuste em **Settings → Pages → Source**. |
+| Erro "Found 0 artifact(s)" / "No artifacts named github-pages were found" em "Publicar" | O passo não conseguiu ler o artefato (falta de permissão `actions: read`, comum em repositório privado ou de organização) ou o envio anterior falhou | Confirme que o `pages.yml` tem `actions: read` em `permissions`. Abra o job "montar" e veja se "Enviar o artefato" ficou verde. Depois clique em **Re-run all jobs** (e não só "failed jobs"). Em **Settings → Actions → General → Workflow permissions**, escolha "Read and write permissions" se for repositório de organização. |
+| Aviso `DEP0040 punycode` no log | Aviso do Node, sem efeito | Pode ignorar: não é a causa de falha. |
 | Foto ou vídeo não aparece | Nome ou caminho diferente do arquivo, ou maiúscula | Abra o site com `?conferir`: ele lista "Arquivo não encontrado". |
 | Versão antiga aparece | Cache do navegador | Recarregue com **Ctrl+Shift+R**. |
 | `git push` recusado por tamanho | Arquivo acima de 100 MB | Comprima o vídeo ou hospede fora. |

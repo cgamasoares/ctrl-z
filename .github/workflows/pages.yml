@@ -8,7 +8,10 @@ on:
     branches: [main]
   workflow_dispatch:        # permite rodar manualmente na aba Actions
 
+# "actions: read" é necessário para o passo de publicação encontrar o artefato
+# (sem ele, repositórios privados e algumas organizações dão "Found 0 artifact(s)").
 permissions:
+  actions: read
   contents: read
   pages: write
   id-token: write
@@ -18,11 +21,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  publicar:
+  # 1) Monta a pasta que vai ao ar e a envia como artefato
+  montar:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Baixar o código
         uses: actions/checkout@v4
@@ -43,12 +44,23 @@ jobs:
           mkdir _site
           cp -r index.html 404.html assets conteudo _site/
           touch _site/.nojekyll
+          echo "Conteúdo da pasta publicada:"
+          ls -la _site
+          du -sh _site
 
       - name: Enviar o artefato
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
+  # 2) Publica o artefato no Pages
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - name: Publicar
         id: deploy
         uses: actions/deploy-pages@v4
