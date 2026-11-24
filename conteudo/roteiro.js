@@ -29,7 +29,7 @@ window.ROTEIRO = {
      instagram: só o usuário, como "@usuario". Vazio = aparece só o nome. */
   equipe: [
     { nome: "Brenda Teixeira",   instagram: "" },
-    { nome: "Camila da Gama",    instagram: "@camis_dogama" },
+    { nome: "Camila da Gama/@camis_dogama",    instagram: "@camis_dogama" },
     { nome: "Igor Rios",         instagram: "" },
     { nome: "Lorena de Oliveira", instagram: "" },
     { nome: "Lilian Xavier",     instagram: "" },
