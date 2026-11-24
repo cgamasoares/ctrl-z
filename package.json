@@ -1,0 +1,11 @@
+{
+  "name": "do-clique-ao-vinil",
+  "version": "1.0.0",
+  "description": "PC da Redação CTRL+Z: site da reportagem \"Do clique ao vinil\"",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "atualizar": "node atualizar-conteudo.js",
+    "servir": "npx --yes serve ."
+  }
+}

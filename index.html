@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1c52c4">
+  <title>Do clique ao vinil – CTRL+Z</title>
+  <meta name="description" content="Grande reportagem Do clique ao vinil: o analógico conquista espaço entre os jovens. Explore o PC da redação CTRL+Z.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Do clique ao vinil – CTRL+Z">
+  <meta property="og:description" content="O analógico conquista espaço entre os jovens. Explore o PC da redação CTRL+Z.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+  <!-- Telas de inicialização e login: montadas por assets/app.js -->
+  <div id="boot" class="tela" hidden></div>
+  <div id="login" class="tela" hidden></div>
+
+  <!-- Área de trabalho -->
+  <div id="desktop" hidden>
+    <div id="area">
+      <div id="icones"></div>
+      <div id="marca"></div>
+      <div id="janelas"></div>
+    </div>
+    <div id="menu-iniciar" hidden></div>
+    <div id="notificacoes"></div>
+    <div id="balao" class="balao" role="status" hidden></div>
+    <div id="barra-tarefas">
+      <button id="btn-iniciar" type="button" aria-haspopup="true" aria-expanded="false">iniciar</button>
+      <div id="tarefas"></div>
+      <div id="bandeja"></div>
+    </div>
+  </div>
+
+  <noscript><p style="font:16px sans-serif;color:#fff;padding:24px">Este site precisa de JavaScript para funcionar.</p></noscript>
+
+  <!-- Conteúdo gerado por "node atualizar-conteudo.js" (materia.md + roteiro.js) -->
+  <script src="conteudo/_gerado.js"></script>
+  <script src="assets/marked.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Node (o site não tem dependências, mas o npx pode criar isto)
+node_modules/
+npm-debug.log*
+
+# Pasta de montagem local do workflow
+_site/
+
+# Arquivos temporários
+*.tmp
+*.log

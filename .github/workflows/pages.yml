@@ -1,0 +1,54 @@
+# Publica o site no GitHub Pages a cada envio (push) para a branch main.
+# Antes de publicar, regenera conteudo/_gerado.js, então o site nunca sai desatualizado.
+# Requer: Settings > Pages > Build and deployment > Source = "GitHub Actions".
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:        # permite rodar manualmente na aba Actions
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Instalar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Atualizar o conteúdo (materia.md + roteiro.js → _gerado.js)
+        run: node atualizar-conteudo.js
+
+      - name: Configurar o Pages
+        uses: actions/configure-pages@v5
+
+      - name: Montar a pasta publicada (só o que o site usa)
+        run: |
+          mkdir _site
+          cp -r index.html 404.html assets conteudo _site/
+          touch _site/.nojekyll
+
+      - name: Enviar o artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Publicar
+        id: deploy
+        uses: actions/deploy-pages@v4
