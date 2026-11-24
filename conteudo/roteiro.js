@@ -18,7 +18,7 @@ window.ROTEIRO = {
     tituloCurto: "Do clique ao vinil",     // aparece no pauta.txt
     nomeConta: "Redação CTRL+Z",           // conta única da tela de login
     logo: "midias/fotos/equipe/logo-ctrlz.png",                              // banner CTRL+Z, ex.: "midias/fotos/equipe/logo-ctrlz.png" (vazio = logo em texto)
-    fotoGrupo: "midias/fotos/equipe/grupo.svg",                         // login, MSG e créditos, ex.: "midias/fotos/equipe/grupo.jpg"
+    fotoGrupo: "midias/fotos/equipe/foto_grupo.jpeg",                         // login, MSG e créditos, ex.: "midias/fotos/equipe/grupo.jpg"
     fotoGrupoDescricao: "Foto de grupo da equipe CTRL+Z",
     papelDeParede: "",                     // foto dos arredores do Bixiga (vazio = fundo azul)
     fundoLogin: "",                        // fundo da tela de login
