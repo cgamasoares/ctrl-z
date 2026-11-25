@@ -34,6 +34,7 @@ window.ROTEIRO = {
     { nome: "Lorena de Oliveira", instagram: "@yu.yulore" },
     { nome: "Lilian Xavier",     instagram: "@im.lilianxavier" },
     { nome: "Marina Luna",       instagram: "@maresdemarina" }
+    { nome: "Nosso Instagram",       instagram: "@ctrlzjornalismo" }
   ],
 
   /* ---------- As 9 paradas ----------
