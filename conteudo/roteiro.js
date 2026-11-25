@@ -178,7 +178,7 @@ window.ROTEIRO = {
     // Usado quando a próxima sugestão não é a parada seguinte (o visitante pulou etapas).
     // {icone} e {nomeCurto} são trocados pelos valores da parada sugerida.
     lacuna: "Ainda falta {icone}: {nomeCurto}. Quer ver agora?",
-    final: "Voltamos da feira! Valeu por ler até aqui. Preparamos a matéria completa pra você.",
+    final: "Valeu por ler até aqui. Veja a matéria completa e nos siga no Instagram @ctrlzjornalismo",
     pintaPopup: "Leia antes de pintar"
   }
 };
