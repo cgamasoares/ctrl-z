@@ -51,4 +51,4 @@ Marcos Antônio Lombardi, vendedor de discos que frequenta a feira há cerca de 
 
 O interesse por objetos que atravessam gerações pode ser relacionado à busca por permanência em uma realidade marcada pela velocidade das transformações. O sociólogo Zygmunt Bauman utiliza o conceito de **modernidade líquida** para discutir uma sociedade caracterizada pela instabilidade e pela fluidez das relações e das estruturas sociais. Sob essa perspectiva, a **valorização de tecnologias** que podem ser guardadas, colecionadas e utilizadas por anos permite refletir sobre a procura por experiências mais duradouras em meio a hábitos de consumo cada vez mais imediatos.
 
-**Reportagem multimídia produzida para a disciplina Jornalismo Digital, do curso de Jornalismo da FAPCOM (Faculdade Paulus de Comunicação), no 6° semestre de 2026. Orientação: Profª Patrícia Basilio**
+**Reportagem multimídia produzida para a disciplina Jornalismo Digital, do curso de Jornalismo da FAPCOM (Faculdade Paulus de Comunicação), no 2° semestre de 2026. Orientação: Profª Patrícia Basilio**
